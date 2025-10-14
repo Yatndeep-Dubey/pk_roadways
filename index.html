@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transport & Logistics Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .carousel-slide {
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .carousel-slide.hidden {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-slide.visible {
+            opacity: 1;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="antialiased text-slate-800">
+
+    <header class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="images/logo1.png" alt="P.K. Roadways" class="h-20 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex gap-6 text-slate-800 font-medium">
+                <a href="#services" class="hover:text-amber-600 transition">Services</a>
+                <a href="#gallery" class="hover:text-amber-600 transition">Gallery</a>
+                <a href="#about" class="hover:text-amber-600 transition">About</a>
+                <a href="#team" class="hover:text-amber-600 transition">Team</a>
+                <a href="#network" class="hover:text-amber-600 transition">Network</a>
+                <a href="#contact" class="hover:text-amber-600 transition">Enquiry</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="btnMobile"
+                class="md:hidden text-3xl text-slate-800 focus:outline-none transition-transform duration-200">
+                ☰
+            </button>
+        </div>
+
+        <nav id="mobileMenu"
+            class="hidden h-fit text-center flex flex-col bg-white border-t border-slate-200 shadow-md md:hidden transition-all duration-300">
+            <a href="#services" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">Services</a>
+            <a href="#gallery" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">Gallery</a>
+            <a href="#about" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">About</a>
+            <a href="#team" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">Team</a>
+            <a href="#network" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">Network</a>
+            <a href="#contact" class="px-6 py-3 border-b hover:bg-slate-100 text-slate-800">Enquiry</a>
+        </nav>
+    </header>
+
+    <main class="pt-20"> <!-- leave some top padding because header is fixed -->
+
+        <!-- 1. Hero with carousel -->
+        <section id="hero" class="relative w-full overflow-hidden">
+            <div class="relative w-full h-[25rem] sm:h-[40rem] lg:h-[50rem]">
+                <div class="carousel-container w-full h-full relative">
+
+                    <!-- Slide 1 (Start with block) -->
+                    <div class="carousel-slide block absolute inset-0 transition-opacity duration-700">
+                        <img src="images/slider/11.jpg" alt="Slide 1"
+                            class="absolute inset-0 w-full h-full object-cover object-center" />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                            <div>
+                                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Reliable Transport
+                                    Solutions</h1>
+                                <p class="mt-3 text-base sm:text-lg md:text-xl">Fast, Safe, and Affordable</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other slides -->
+                    <div class="carousel-slide hidden absolute inset-0 transition-opacity duration-700">
+                        <img src="images/slider/22.jpg" alt="Slide 2"
+                            class="absolute inset-0 w-full h-full object-cover object-center" />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                            <div>
+                                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Nationwide & Global
+                                    Coverage</h1>
+                                <p class="mt-3 text-base sm:text-lg md:text-xl">Your cargo, our responsibility</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide hidden absolute inset-0 transition-opacity duration-700">
+                        <img src="images/slider/33.jpg" alt="Slide 3"
+                            class="absolute inset-0 w-full h-full object-cover object-center" />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                            <div>
+                                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Door to Door
+                                    Delivery</h1>
+                                <p class="mt-3 text-base sm:text-lg md:text-xl">Seamless & Transparent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide hidden absolute inset-0 transition-opacity duration-700">
+                        <img src="images/slider/44.jpg" alt="Slide 4"
+                            class="absolute inset-0 w-full h-full object-cover object-center" />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                            <div>
+                                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Modern Fleet,
+                                    Expert Drivers</h1>
+                                <p class="mt-3 text-base sm:text-lg md:text-xl">Delivering your goods safely and on
+                                    time, every time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. Services -->
+        <section id="services" class="max-w-6xl mx-auto px-6 py-10">
+            <h2 class="text-3xl font-semibold text-center">Our Services</h2>
+            <p class="mt-3 text-justify text-slate-600 mx-auto">
+                We work 24×7 to help clients serve whenever, wherever, and however they may need our services.
+                We specialize in moving goods and containers of all load sizes from Mumbai and Delhi to all over India.
+                We take pride in servicing everyone irrespective of their business and scale.
+                Our solution is handcrafted as per every client’s requirement and budget.
+                Our shipments follow National Transportation Guidelines, and goods are handled with extreme care with
+                the help of our advanced equipment and skilled employees.
+                All consignments can be tracked in real time.
+            </p>
+
+            <!-- Service Grid -->
+            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Transparency</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        Transparency in pricing and policies. Clients can refer to pricing online as per the
+                        consignment’s
+                        weight or volume. In fact, we’ve gone a step further by introducing online quotes based on the
+                        information supplied by the client.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Professionalism</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        Professionalism in management — right from booking your consignment to tracking, storage, and
+                        delivery. Automated systems help booking with the interface of trained staff, and technology
+                        aids
+                        in keeping track and final delivery notifications via registered emails or phone numbers.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Commitment</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        Commitment for us is not merely a word, but a standard based on systems, processes, and
+                        policies.
+                        We promise to fulfill to the utmost of our abilities to deliver and delight.
+                        Even in circumstances beyond our control, we will stand by our clients.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Parcel & Part Truck Load Service</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        Parcel & Part Truck Load Service is our benchmark strength.
+                        We excel in delivering parcels and part loads of diversified finished & industrial products of
+                        varying sizes
+                        and weights across 9 states. Along with warehouse-to-warehouse delivery,
+                        we also offer an exclusive option of doorstep delivery for customers.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Truck Load Service</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        If you are looking for a reliable partner to export large consignments, we are here for you.
+                        With years of experience delivering for major enterprises and corporates,
+                        once your consignment is with us, you can rest assured it will be delivered safely, securely,
+                        and on time.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg shadow p-6 bg-white hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-amber-600">Security</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                        Your items are stored in a locked, secure location.
+                        The facility is equipped with alarms and 24-hour camera surveillance.
+                        Our state-of-the-art security and alarm system ensures complete safety of your possessions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Gallery-->
+        <section id="gallery" class="bg-slate-50 py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-semibold text-center">Gallery</h2>
+                <p class="mt-2 text-center text-slate-600">
+                    A glimpse of our operations, fleet, and logistics network
+                </p>
+
+                <div class="mt-10 grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/1_.jpg" alt="Gallery 1"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/2_.jpg" alt="Gallery 2"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/3_.jpg" alt="Gallery 3"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/4_.jpg" alt="Gallery 4"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/5_.jpg" alt="Gallery 5"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/6_.jpg" alt="Gallery 6"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/7_.jpg" alt="Gallery 7"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/8_.jpg" alt="Gallery 8"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/9_.jpg" alt="Gallery 9"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/10_.jpg" alt="Gallery 10"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/11_.jpg" alt="Gallery 11"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/12_.jpg" alt="Gallery 12"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/13_.jpg" alt="Gallery 13"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/14_.jpg" alt="Gallery 14"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/15_.jpg" alt="Gallery 15"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/16.jpg" alt="Gallery 16"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/17.jpg" alt="Gallery 17"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition">
+                        <img src="images/gallery/18.jpg" alt="Gallery 18"
+                            class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--/#about-->
+        <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-semibold">About Us</h2>
+            </div>
+
+            <p class="text-justify text-slate-600 mx-auto leading-relaxed">
+                PK Roadways set sail on its journey in <strong>1988</strong>. Since then, the service has become
+                synonymous with
+                <strong>reliability, responsiveness, and transparency</strong> in logistics solutions for parcel &amp;
+                part load service,
+                truck load service, and grey &amp; finished textile. <br /><br />
+                We promise fast, safe, and cost-effective delivery with the convenience of technologically advanced
+                utilities like
+                <strong>easy online tracking, auto status alerts, and a smart logistics mobile application</strong>.
+                Our commitment is driven by our passion to stand by your side till the last mile.
+                We further pledge to continue serving our clients with the same excellence and dedication.
+            </p>
+
+            <div class="mt-12 space-y-10">
+                <!-- Mission -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-amber-600 mb-3">Our Mission</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Our mission is to expand our locations both at the state and national level by being the
+                        best-managed and
+                        most-profitable logistics company — achieving both short and long-haul carrier efficiencies at a
+                        low cost.
+                        As a comprehensive logistics solutions provider, we are committed to:
+                    </p>
+
+                    <ol class="list-decimal list-inside mt-4 text-slate-600 leading-relaxed space-y-1">
+                        <li>Delivering customized solutions</li>
+                        <li>Investing in technology and people</li>
+                        <li>Complying with applicable statutory and regulatory requirements</li>
+                        <li>Enhancing portability</li>
+                        <li>Providing end-to-end supply chain services through an efficient global network</li>
+                    </ol>
+                </div>
+
+                <!-- Vision -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-amber-600 mb-3">Our Vision</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Freight Systems will constantly exceed customer expectations by providing
+                        <strong>innovative and integrated logistics solutions</strong> that deliver reliability, trust,
+                        and value.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--/#team-->
+        <section id="team" class="bg-slate-50 py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-semibold text-center">Our Management Team</h2>
+                <p class="mt-3 text-center text-slate-600 max-w-3xl mx-auto">
+                    However, to explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    arose,
+                    here’s a complete account of the system, and the actual teachings of the great explorer of truth.
+                </p>
+
+                <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Member 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                        <img src="images/team/01.jpeg" alt="Sukhwant Singh"
+                            class="mx-auto rounded-full w-40 h-40 object-cover shadow-md">
+                        <h3 class="mt-5 font-semibold text-xl">Sukhwant Singh</h3>
+                        <p class="text-slate-500 mt-1">Founder</p>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                            Visionary leader and founder of PK Roadways, committed to reliability, trust, and
+                            customer-first service excellence.
+                        </p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                        <img src="images/team/02.jpeg" alt="Ashok Kr. Tiwari"
+                            class="mx-auto rounded-full w-40 h-40 object-cover shadow-md">
+                        <h3 class="mt-5 font-semibold text-xl">Ashok Kr. Tiwari</h3>
+                        <p class="text-slate-500 mt-1">General Manager</p>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                            A results-driven professional ensuring seamless operations and quality delivery across all
+                            divisions.
+                        </p>
+                        <div class="mt-4 flex justify-center items-center gap-2 text-slate-600 text-sm">
+                            📞 <span>9210366745, 9345458747</span>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition">
+                        <img src="images/team/03.jpeg" alt="Tript Singh"
+                            class="mx-auto rounded-full w-40 h-40 object-cover shadow-md">
+                        <h3 class="mt-5 font-semibold text-xl">Tript Singh</h3>
+                        <p class="text-slate-500 mt-1">Team Member</p>
+                        <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                            Dedicated to customer satisfaction and operational excellence, ensuring timely communication
+                            and service.
+                        </p>
+                        <div class="mt-4 flex justify-center items-center gap-2 text-slate-600 text-sm">
+                            📞 <span>9667006745</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. Networks / Partners / Grid + carousel -->
+        <!--/#network-->
+        <section id="network" class="max-w-6xl mx-auto px-6 py-16">
+            <h2 class="text-3xl font-semibold text-center">Our Network</h2>
+            <p class="mt-3 text-center text-slate-600 max-w-3xl mx-auto">
+                Our wide network is ready at your service. Please search and contact our nearest office —
+                we will be happy to guide you further.
+            </p>
+
+            <!-- GROUP 1 -->
+            <div class="mt-12 grid md:grid-cols-3 gap-10">
+                <!-- Chennai -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Chennai</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> D-24, 2nd Floor, CMDA Truck Terminal,
+                        GNT Road, Madhavaram, Chennai-600099</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. K. Ismayil</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9363366745, 9894926689</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Pudducherry -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Pudducherry</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> JMR Apartment, C-2, 2nd Floor, Lawspet
+                        Main Road, Near Police Station, Pudducherry - 605008</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. D. Prabhudev</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9600647808</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Bangalore -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Bangalore</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> No-21/2, Harish Compound, Madhavara,
+                        Tumkur Road, Behind TCI Petrol Pump, Bangalore-572123</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Krishna Sharma</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9590616780</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+            </div>
+
+            <div class="border-t my-10"></div>
+
+            <!-- GROUP 2 -->
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Chandigarh -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Chandigarh</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> Shop No 1, Opp Trucks Parking, Sector 26
+                        Transport Area, Chandigarh</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Sanjeev Sharma</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9217800386, 9417359332</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Jaipur -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Jaipur</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> Anupam Vihar, Near Anaj Mandi Gate,
+                        Jaipur Ajmer Express Highway, Road No 14, VKI Area, Jaipur</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Naresh Chaudhary</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9826263642, 9610111129</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Uttarakhand -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Uttarakhand</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> H.No-48, Brar Nagar, Rampur Road,
+                        Rudrapur, Dist-Udham Singh Nagar</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Sarabjeet Singh</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9758965884</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+            </div>
+
+            <div class="border-t my-10"></div>
+
+            <!-- GROUP 3 -->
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Varanasi -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Varanasi</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> C/o VIR Logistics, GT Road, Chandapur,
+                        Lahartara, Varanasi</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Vivek Tiwari</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9651200008, 8299820440</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Lucknow -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Lucknow</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> 8/1 Industrial Area, Mill Road,
+                        Aishbagh, Lucknow</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Dileep Singh</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9936565754</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Mumbai -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Mumbai</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> C/O Inland World Logistics, Gala No-5
+                        &amp; 6, Neelkhand Ind. Estate No-1, Near Sai Baba Mandir, Satiwali Road, Vasai East, Palghar
+                        (MH)</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Sohan Lal Sharma “Sonu”</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9321003917, 9850677606</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+            </div>
+
+            <div class="border-t my-10"></div>
+
+            <!-- GROUP 4 -->
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Kanpur -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Kanpur</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> C/O Narayan Transport Service, 133/151,
+                        Transport Nagar, Kanpur-208023</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Ram Nath Singh</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 7275370491, 9935202111</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Hyderabad -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Hyderabad</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> Survey No 874, Gandimisamma Road,
+                        Medchal Checkpost, Medchal, Hyderabad-501401</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Rajesh Berwal</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9391143188, 9392143188</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Gurgaon -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Gurgaon</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> Kherki Daula, Gurgaon</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Govind Dutt Sharma</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9555268181, 9560934633</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+            </div>
+
+            <div class="border-t my-10"></div>
+
+            <!-- GROUP 5 -->
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Bhopal -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Bhopal</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> C/O Raipur Bombay Roadways, M.P.L.
+                        Chauraha, Near Sanjay Kanta, Industrial Area, Govindpura, Bhopal-23</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Manish Kumar</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9827049673, 7489472762</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+
+                <!-- Noida -->
+                <div class="bg-white rounded-lg shadow p-6 border hover:shadow-lg transition">
+                    <h4 class="text-lg font-semibold">PK Roadways <span class="text-red-600">Noida</span></h4>
+                    <p class="mt-2"><span class="font-semibold">Address:</span> Noida, G.B. Nagar</p>
+                    <p class="mt-2"><span class="font-semibold">Person Name:</span> Mr. Deepak Sharma</p>
+                    <p class="mt-2"><span class="font-semibold">Mobile No.:</span> 9811464525</p>
+                    <p class="mt-2"><span class="font-semibold">Email ID:</span> <a href="mailto:info@pkroadways.com"
+                            class="text-amber-600 hover:underline">info@pkroadways.com</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 7. Enquiry / Contact form -->
+        <section id="contact" class="bg-slate-50 py-16">
+            <div class="max-w-3xl mx-auto px-6 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-center">Send an Enquiry</h2>
+                <form class="mt-6 grid gap-4">
+                    <input type="text" placeholder="Full Name" class="border rounded px-4 py-2" required />
+                    <input type="email" placeholder="Email Address" class="border rounded px-4 py-2" required />
+                    <input type="tel" placeholder="Phone Number" class="border rounded px-4 py-2" required />
+                    <input type="text" placeholder="Company (optional)" class="border rounded px-4 py-2" />
+                    <textarea rows="4" placeholder="Message / Cargo Details" class="border rounded px-4 py-2"
+                        required></textarea>
+                    <div class="text-center">
+                        <button class="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 8. Map -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-2xl font-semibold text-center">Our Location</h2>
+                <div class="mt-6 h-64 md:h-96 w-full">
+                    <iframe
+                        src="https://maps.google.com/maps?q=P%20K%20Roadways%20Regd&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--/#footer-->
+        <footer class="bg-slate-900 text-white py-10">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+                <!-- About -->
+                <div>
+                    <h3 class="font-semibold text-xl tracking-wide">P.K. Roadways</h3>
+                    <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                        6th Mile Stone, Gali No. 2, Delhi-UP Border, Near Metro Pillar No. 110,
+                        Post- Chikamberpur, Dist-Ghaziabad - 201006
+                    </p>
+                    <p class="mt-3 text-sm text-slate-300">
+                        <span class="font-semibold text-white">Phone:</span><br>
+                        0120-2623525, 0120-2624525, 0120-2625525
+                    </p>
+                    <p class="mt-3 text-sm text-slate-300">
+                        <span class="font-semibold text-white">Email:</span><br>
+                        <a href="mailto:customercare@pkroadways.com"
+                            class="hover:underline text-amber-400">customercare@pkroadways.com</a>
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg">Quick Links</h4>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-300">
+                        <li><a href="#services" class="hover:text-amber-400 transition">Services</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition">About Us</a></li>
+                        <li><a href="#team" class="hover:text-amber-400 transition">Management Team</a></li>
+                        <li><a href="#network" class="hover:text-amber-400 transition">Our Network</a></li>
+                        <li><a href="#contact" class="hover:text-amber-400 transition">Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact / Motto -->
+                <div>
+                    <h4 class="font-semibold text-lg">Why Choose Us</h4>
+                    <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+                        Reliable, responsive, and transparent logistics solutions
+                        serving clients nationwide since 1988.
+                        Committed to delivering excellence with every consignment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-sm text-slate-500 border-t border-slate-800 pt-6">
+                © 2025 P.K. Roadways. All rights reserved.
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Carousel JS
+        let index = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        setInterval(() => {
+            slides[index].classList.add('hidden');
+            index = (index + 1) % slides.length;
+            slides[index].classList.remove('hidden');
+        }, 5000);
+
+        const btn = document.getElementById('btnMobile');
+        const menu = document.getElementById('mobileMenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+
+            // toggle ☰ / ✖ icon
+            if (menu.classList.contains('hidden')) {
+                btn.textContent = '☰';
+            } else {
+                btn.textContent = '✖';
+            }
+        });
+    </script>
+</body>
+
+</html>
