@@ -101,6 +101,18 @@
     {
       "image": "images/gallery/18.jpg",
       "alt": "Gallery 18"
+    },
+    {
+      "image": "images/gallery/19.png",
+      "alt": "Gallery 19"
+    },
+    {
+        "image": "images/gallery/20.png",
+        "alt": "Gallery 20"
+    },
+    {
+        "image": "images/gallery/21.png",
+        "alt": "Gallery 21"
     }
   ],
   "our_networks": [

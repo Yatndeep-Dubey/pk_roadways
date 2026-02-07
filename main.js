@@ -148,6 +148,9 @@ const closeModal = document.getElementById("closeModal");
       const images = Array.isArray(data.gallery) ? data.gallery : [];
       if (images.length === 0) return;
 
+      // Sort in descending order - newest images first
+      images.reverse();
+
       images.forEach((img) => {
         const imgDiv = document.createElement('div');
         imgDiv.className = 'rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105 cursor-pointer';
@@ -214,7 +217,7 @@ modal.addEventListener("click", (e) => {
 })();
 
 // ========== Enquiry Form - Form submission ==========
-const scriptURL = "https://script.google.com/macros/s/AKfycbzmnLUa2sJwh0QlhyJZBlpVUxSrbZOI3SqkrDQ3VLNTnrsjdq-x64entrK6y0aeZ48/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwyLQLVVoqHf384xT31LzGwHkmmmUTa1rdFg2tNMPH846adjPsCw4SYwVQg5a2azbr5/exec"
 
 const form = document.getElementById("enquiryForm");
 const submitBtn = document.getElementById("submitBtn");
@@ -225,15 +228,39 @@ const responseMessage = document.getElementById("responseMessage");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
+  // Validation
+  const fullName = form.full_name.value.trim();
+  const phone = form.phone.value.trim();
+  
+  // Clear previous error messages
+  responseMessage.innerHTML = "";
+  responseMessage.classList.remove("text-red-600", "text-green-600");
+
+  // Validate name - only letters and spaces allowed
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  if (!nameRegex.test(fullName)) {
+    responseMessage.innerHTML = "❌ Name should only contain letters and spaces";
+    responseMessage.classList.add("text-red-600");
+    return;
+  }
+
+  // Validate phone - exactly 10 digits
+  const phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(phone)) {
+    responseMessage.innerHTML = "❌ Phone number must be exactly 10 digits";
+    responseMessage.classList.add("text-red-600");
+    return;
+  }
+
   // Show loader
   loader.classList.remove("hidden");
   btnText.textContent = "Sending...";
   submitBtn.disabled = true;
 
   const data = {
-    full_name: form.full_name.value,
+    full_name: fullName,
     email: form.email.value,
-    phone: form.phone.value,
+    phone: phone,
     company: form.company.value,
     message: form.message.value
   };
