@@ -1,0 +1,178 @@
+{
+  "hero_caraousel_section": [
+    {
+      "image": "images/slider/11.png",
+      "alt": "Reliable Transport",
+      "title": "Reliable Transport Solutions",
+      "description": "Fast, Safe, and Affordable — with nationwide tracking and dedicated support.",
+      "showButtons": true
+    },
+    {
+      "image": "images/slider/22.png",
+      "alt": "Nationwide Coverage",
+      "title": "Nationwide & Global Coverage",
+      "description": "Your cargo, our responsibility — end-to-end logistics with real-time tracking.",
+      "showButtons": false
+    },
+    {
+      "image": "images/slider/33.png",
+      "alt": "Door to Door",
+      "title": "Door to Door Delivery",
+      "description": "Seamless & Transparent — reliable last-mile execution.",
+      "showButtons": false
+    },
+    {
+      "image": "images/slider/44.png",
+      "alt": "Modern Fleet",
+      "title": "Modern Fleet, Expert Drivers",
+      "description": "Delivering your goods safely and on time, every time.",
+      "showButtons": false
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/gallery/1_.jpg",
+      "alt": "Gallery 1"
+    },
+    {
+      "image": "images/gallery/2_.jpg",
+      "alt": "Gallery 2"
+    },
+    {
+      "image": "images/gallery/3_.jpg",
+      "alt": "Gallery 3"
+    },
+    {
+      "image": "images/gallery/4_.jpg",
+      "alt": "Gallery 4"
+    },
+    {
+      "image": "images/gallery/5_.jpg",
+      "alt": "Gallery 5"
+    },
+    {
+      "image": "images/gallery/6_.jpg",
+      "alt": "Gallery 6"
+    },
+    {
+      "image": "images/gallery/7_.jpg",
+      "alt": "Gallery 7"
+    },
+    {
+      "image": "images/gallery/8_.jpg",
+      "alt": "Gallery 8"
+    },
+    {
+      "image": "images/gallery/9_.jpg",
+      "alt": "Gallery 9"
+    },
+    {
+      "image": "images/gallery/10_.jpg",
+      "alt": "Gallery 10"
+    },
+    {
+      "image": "images/gallery/11_.jpg",
+      "alt": "Gallery 11"
+    },
+    {
+      "image": "images/gallery/12_.jpg",
+      "alt": "Gallery 12"
+    },
+    {
+      "image": "images/gallery/13_.jpg",
+      "alt": "Gallery 13"
+    },
+    {
+      "image": "images/gallery/14_.jpg",
+      "alt": "Gallery 14"
+    },
+    {
+      "image": "images/gallery/15_.jpg",
+      "alt": "Gallery 15"
+    },
+    {
+      "image": "images/gallery/16.jpg",
+      "alt": "Gallery 16"
+    },
+    {
+      "image": "images/gallery/17.jpg",
+      "alt": "Gallery 17"
+    },
+    {
+      "image": "images/gallery/18.jpg",
+      "alt": "Gallery 18"
+    }
+  ],
+  "our_networks": [
+    {
+      "name": "PK Roadways",
+      "city": "Chennai",
+      "address": "D-24, 2nd Floor, CMDA Truck Terminal, GNT Road, Madhavaram, Chennai-600099"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Puducherry",
+      "address": "JMR Apartment, C-2, 2nd Floor, Lawspet Main Road, Near Police Station, Puducherry - 605008"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Bangalore",
+      "address": "No-21/2, Harish Compound, Madhavara, Tumkur Road, Bangalore-572123"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Chandigarh",
+      "address": "Shop No 1, Opp Trucks Parking, Sector 26 Transport Area, Chandigarh"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Jaipur",
+      "address": "Anupam Vihar, Near Anaj Mandi Gate, Jaipur Ajmer Express Highway, VKI Area"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Uttarakhand",
+      "address": "H.No-48, Brar Nagar, Rampur Road, Rudrapur, Dist-Udham Singh Nagar"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Varanasi",
+      "address": "C/o VIR Logistics, GT Road, Chandapur, Lahartara, Varanasi"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Lucknow",
+      "address": "8/1 Industrial Area, Mill Road, Aishbagh, Lucknow"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Mumbai",
+      "address": "C/O Inland World Logistics, Gala No-5 & 6, Vasai East, Palghar (MH)"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Kanpur",
+      "address": "C/O Narayan Transport Service, 133/151, Transport Nagar, Kanpur"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Hyderabad",
+      "address": "Survey No 874, Gandimisamma Road, Medchal Checkpost, Hyderabad"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Gurgaon",
+      "address": "Kherki Daula, Gurgaon"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Bhopal",
+      "address": "C/O Raipur Bombay Roadways, M.P.L. Chauraha, Govindpura, Bhopal"
+    },
+    {
+      "name": "PK Roadways",
+      "city": "Noida",
+      "address": "Noida, G.B. Nagar"
+    }
+  ]
+}
